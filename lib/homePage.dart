@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import './test.dart';
+// import './containerAlignment - TextAlign.dart';
+// import './imageAssets.dart';
+import 'cardWedget.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Test());
+    return MaterialApp(
+      home: WedgetCard(),
+    );
   }
 }
