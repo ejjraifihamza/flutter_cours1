@@ -50,6 +50,7 @@ class ExampleOne extends StatelessWidget {
                               Icon(Icons.star),
                             ],
                           ),
+                          // Spacer(),
                           Text(
                             '17 Reviews',
                             style: TextStyle(fontWeight: FontWeight.bold),
