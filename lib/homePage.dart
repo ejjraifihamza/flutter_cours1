@@ -20,13 +20,18 @@ import 'package:flutter/material.dart';
 // import 'InKWell.dart';
 // import 'FloatingActionButton.dart';
 // import 'StatefulWidget.dart';
-import 'package:flutter_cours1/DropDownButton.dart';
+// import 'package:flutter_cours1/DropDownButton.dart';
+// import 'package:flutter_cours1/CheckBox.dart';
+// import 'CheckBoxListTile.dart';
+// import 'Radio.dart';
+// import 'RadioListTile.dart';
+import 'Switch.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DropDownButton1(),
+      home: Switch1(),
     );
   }
 }
