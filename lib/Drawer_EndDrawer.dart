@@ -7,9 +7,11 @@ class DrawerEndDrawer1 extends StatefulWidget {
 }
 
 class _DrawerEndDrawer1State extends State<DrawerEndDrawer1> {
+  GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
       appBar: AppBar(
         backgroundColor: Colors.red[200],
         title: Text('Drawer _ EndDrawer'),
@@ -22,6 +24,7 @@ class _DrawerEndDrawer1State extends State<DrawerEndDrawer1> {
           IconButton(onPressed: () {}, icon: Icon(Icons.alarm))
         ],
       ),
+      drawerScrimColor: Colors.red[200]!.withOpacity(0.2),
       drawer: Drawer(
         child: Center(
           child: Column(
@@ -57,6 +60,17 @@ class _DrawerEndDrawer1State extends State<DrawerEndDrawer1> {
                 onTap: () {},
               ),
             ],
+          ),
+        ),
+      ),
+      body: Center(
+        child: Container(
+          child: ElevatedButton(
+            onPressed: () {
+              scaffoldKey.currentState!.openDrawer();
+            },
+            child: Text('Click to show the drawer'),
+            style: ElevatedButton.styleFrom(primary: Colors.red[200]),
           ),
         ),
       ),

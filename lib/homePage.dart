@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cours1/PageTwo.dart';
 // import './containerAlignment - TextAlign.dart';
 // import './imageAssets.dart';
 // import 'cardWedget.dart';
@@ -38,13 +39,30 @@ import 'package:flutter/material.dart';
 // import 'GridView.dart';
 // import 'ListGenerate.dart';
 // import 'GridViewCount.dart';
-import 'Drawer_EndDrawer.dart';
+// import 'Drawer_EndDrawer.dart';
+// import 'AppBar.dart';
+// import 'TabBar.dart';
+// import 'TabController.dart';
+// import 'BottomNavigationBar.dart';
+// import 'PageView.dart';
+// import 'PageViewBuilder.dart';
+// import 'TextFormField.dart';
+// import 'TextFormField_Form(validator).dart';
+// import 'PageOne.dart';
+// import 'PageThree.dart';
+// import 'Slider.dart';
+import 'ScrollController.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DrawerEndDrawer1(),
+      debugShowCheckedModeBanner: false,
+      home: ScrollController1(),
+      // routes: {
+      //   'pageTwo': (context) => PageTwo1(),
+      //   'pageThree': (context) => PageThree1()
+      // },
     );
   }
 }
