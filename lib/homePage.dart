@@ -51,14 +51,16 @@ import 'package:flutter_cours1/PageTwo.dart';
 // import 'PageOne.dart';
 // import 'PageThree.dart';
 // import 'Slider.dart';
-import 'ScrollController.dart';
+// import 'ScrollController.dart';
+// import 'ShowModalBottomSheet.dart';
+import 'SearchDelegate.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ScrollController1(),
+      home: SearchDelegate1(),
       // routes: {
       //   'pageTwo': (context) => PageTwo1(),
       //   'pageThree': (context) => PageThree1()
