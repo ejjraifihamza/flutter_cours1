@@ -17,7 +17,8 @@ class _AppBar1State extends State<AppBar1> {
         ),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.alarm))
+          IconButton(onPressed: () {}, icon: Icon(Icons.alarm)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.phone))
         ],
         elevation: 50,
         shadowColor: Colors.green,

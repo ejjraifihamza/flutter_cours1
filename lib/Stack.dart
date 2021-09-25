@@ -19,33 +19,33 @@ class Stack1 extends StatelessWidget {
         child: Stack(
           // to make all container use this
           overflow: Overflow.visible,
-          // alignment: Alignment.topRight,
-          // fit: StackFit.expand,
-          // children: [
-          //   Container(
-          //     color: Colors.red,
-          //     width: 200,
-          //     height: 200,
-          //   ),
-          //   Container(
-          //     color: Colors.green,
-          //     width: 100,
-          //     height: 100,
-          //   )
-          // ],
+          alignment: Alignment.topRight,
+          fit: StackFit.expand,
           children: [
-            Positioned(
-                /*
-                bottom, top, left, right, width, height
-              */
-                top: 300,
-                width: 200,
-                height: 200,
-                child: Container(
-                  color: Colors.red,
-                  child: Text('hello world!'),
-                ))
+            Container(
+              color: Colors.red,
+              width: 200,
+              height: 200,
+            ),
+            Container(
+              color: Colors.green,
+              width: 100,
+              height: 100,
+            )
           ],
+          // children: [
+          //   Positioned(
+          //       /*
+          //       bottom, top, left, right, width, height
+          //     */
+          //       top: 300,
+          //       width: 200,
+          //       height: 200,
+          //       child: Container(
+          //         color: Colors.red,
+          //         child: Text('hello world!'),
+          //       ))
+          // ],
         ),
       ),
     );

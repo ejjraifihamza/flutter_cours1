@@ -17,30 +17,31 @@ class _AlertDialog1State extends State<AlertDialog1> {
         child: ElevatedButton(
           onPressed: () {
             showDialog(
-                context: context,
-                builder: (context) {
-                  return AlertDialog(
-                    title: Text('Alert Msg'),
-                    content: Text('You Click The Button'),
-                    // backgroundColor: Colors.yellow,
-                    // titlePadding: EdgeInsets.only(top: 20),
-                    // contentPadding: EdgeInsets.only(top: 20),
-                    // titleTextStyle: TextStyle(fontSize: 30),
-                    // contentTextStyle: TextStyle(color: Colors.red),
-                    actions: [
-                      ElevatedButton(
-                          onPressed: () {
-                            print('OK');
-                          },
-                          child: Text('Ok')),
-                      ElevatedButton(
-                          onPressed: () {
-                            print('Canceled');
-                          },
-                          child: Text('Cancel')),
-                    ],
-                  );
-                });
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  title: Text('Alert Msg'),
+                  content: Text('You Click The Button'),
+                  // backgroundColor: Colors.yellow,
+                  // titlePadding: EdgeInsets.only(top: 20),
+                  // contentPadding: EdgeInsets.only(top: 20),
+                  // titleTextStyle: TextStyle(fontSize: 30),
+                  // contentTextStyle: TextStyle(color: Colors.red),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          print('OK');
+                        },
+                        child: Text('Ok')),
+                    ElevatedButton(
+                        onPressed: () {
+                          print('Canceled');
+                        },
+                        child: Text('Cancel')),
+                  ],
+                );
+              },
+            );
           },
           child: Text('Show Alert'),
         ),

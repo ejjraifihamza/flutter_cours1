@@ -42,7 +42,9 @@ class _TextFormFieldAndFormState extends State<TextFormFieldAndForm> {
                     },
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     validator: (field) {
-                      if (field!.length < 5 || field.length > 10) {
+                      if (field!.length < 5 ||
+                          field.length > 10 ||
+                          !field.contains('@')) {
                         return 'error';
                       } else {
                         return null;
